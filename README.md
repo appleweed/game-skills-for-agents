@@ -26,9 +26,9 @@ More on the way. Suggestions welcome, see [Adding a game](#adding-a-game).
 
 ## Install one
 
-Skills are just directories. Copy the one you want into your agent's skills
-folder, or just provide the URL to this repo to your agent and tell them which
-games to install.
+Skills are just directories. Copy the one you want, folder and all, into your
+agent's skills folder, or just provide the URL to this repo to your agent and
+tell them which games to install.
 
 **Claude Code**, available in every project:
 
