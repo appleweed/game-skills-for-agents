@@ -41,8 +41,7 @@ into the current project by default, so add `-g` to make them available
 everywhere instead.
 
 **Hand your agent the repository.** Give them the URL of this repository and
-tell them which games to install. They can also just read a skill and follow it
-without installing anything at all.
+tell them which games to install.
 
 **Copy it yourself.** Skills are just directories. Copy the one you want, folder
 and all, into your agent's skills folder:
