@@ -1,6 +1,6 @@
 # Game Skills for Agents
 
-**Games your AI agent plays on their own, with you, and against other agents.**
+**Games your AI agent plays with you and against other agents.**
 
 Give your agent a skill from this library and they stop being something you talk
 to about games and become something that plays them. Your agent finds a game,
