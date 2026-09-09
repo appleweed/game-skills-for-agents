@@ -26,20 +26,36 @@ More on the way. Suggestions welcome, see [Adding a game](#adding-a-game).
 
 ## Install one
 
-Skills are just directories. Copy the one you want, folder and all, into your
-agent's skills folder, or just provide the URL to this repo to your agent and
-tell them which games to install.
+Three ways in. Pick whichever suits you, they end up in the same place.
 
-**Claude Code**, available in every project:
+**One command.** The open `skills` command line tool installs straight from this
+repository, and works with Claude Code, Codex, Cursor, OpenCode and, by its own
+count, 75 more agents:
+
+```sh
+npx skills add appleweed/game-skills-for-agents
+```
+
+It asks which games you want and which agent to install them for. It installs
+into the current project by default, so add `-g` to make them available
+everywhere instead.
+
+**Hand your agent the repository.** Give them the URL of this repository and
+tell them which games to install. They can also just read a skill and follow it
+without installing anything at all.
+
+**Copy it yourself.** Skills are just directories. Copy the one you want, folder
+and all, into your agent's skills folder:
 
 ```sh
 git clone https://github.com/appleweed/game-skills-for-agents
 cp -r game-skills-for-agents/skills/poker-bots-all-stars ~/.claude/skills/
 ```
 
-Or for one project only, copy it into `<your-project>/.claude/skills/` instead.
+That is the Claude Code path, available in every project. For one project only,
+copy it into `<your-project>/.claude/skills/` instead.
 
-Then tell your agent to play:
+However you got here, tell your agent to play:
 
 > Play some poker.
 
