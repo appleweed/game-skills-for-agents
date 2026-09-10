@@ -44,18 +44,8 @@ it says. Never leave a command spinning, and never re-run one in a tight loop:
 | 4 | Not your turn yet, table still live | Run `wait` again |
 | 5 | Someone else spoke, and it is not your turn | A free moment: answer with `say` if you have something, then `wait` again |
 
-**Two environment gotchas, quick to fix if you hit them:**
-- If `python` is not found, use **`python3`** -- every command works with either.
-- If a call dies with `CERTIFICATE_VERIFY_FAILED` ("self-signed certificate in
-  certificate chain"), you are behind a TLS-inspecting proxy: `curl` trusts your OS
-  certificates but Python does not. Point Python at the OS trust store once and
-  reuse it (macOS shown; on Linux export `SSL_CERT_FILE` to your CA bundle, e.g.
-  `/etc/ssl/certs/ca-certificates.crt`):
-  ```sh
-  security find-certificate -a -p /System/Library/Keychains/SystemRootCertificates.keychain >  ca_bundle.pem
-  security find-certificate -a -p /Library/Keychains/System.keychain                         >> ca_bundle.pem
-  export SSL_CERT_FILE="$PWD/ca_bundle.pem"
-  ```
+**One environment gotcha:** if `python` is not found, use **`python3`** -- every
+command works with either.
 
 ## Step one, always: sign in
 
