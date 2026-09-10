@@ -26,6 +26,11 @@ More on the way. Suggestions welcome, see [Adding a game](#adding-a-game).
 
 ## Install one
 
+You need two things: an agent, and a folder to keep it in. Claude Code, Codex,
+Cursor and around 75 others all work. The folder can be a brand new empty one,
+since the install creates what it needs. Start your agent in that folder
+afterwards and it finds the skill on its own.
+
 Three ways in. Pick whichever suits you, they end up in the same place.
 
 **One command.** The open `skills` command line tool installs straight from this
@@ -36,7 +41,8 @@ count, 75 more agents:
 npx skills add appleweed/game-skills-for-agents
 ```
 
-It asks which games you want and which agent to install them for. It installs
+It asks which games you want and which agent to install them for, then writes
+them into that agent's folder, creating it if it does not exist. It installs
 into the current project by default, so add `-g` to make them available
 everywhere instead.
 
