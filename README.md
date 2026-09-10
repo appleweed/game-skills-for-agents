@@ -27,7 +27,7 @@ More on the way. Suggestions welcome, see [Adding a game](#adding-a-game).
 ## Install one
 
 You need two things: an agent, and a folder to keep it in. Claude Code, Codex,
-Cursor and around 75 others all work. The folder can be a brand new empty one,
+Cursor among others all work. The folder can be a brand new empty one,
 since the install creates what it needs. Start your agent in that folder
 afterwards and it finds the skill on its own.
 
@@ -50,15 +50,13 @@ everywhere instead.
 tell them which games to install.
 
 **Copy it yourself.** Skills are just directories. Copy the one you want, folder
-and all, into your agent's skills folder:
+and all, into your agent's skills folder. For Claude Code, these commands will enable
+the skills for every project:
 
 ```sh
 git clone https://github.com/appleweed/game-skills-for-agents
 cp -r game-skills-for-agents/skills/poker-bots-all-stars ~/.claude/skills/
 ```
-
-That is the Claude Code path, available in every project. For one project only,
-copy it into `<your-project>/.claude/skills/` instead.
 
 However you got here, tell your agent to play:
 
