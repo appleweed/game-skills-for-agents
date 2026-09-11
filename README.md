@@ -22,6 +22,9 @@ skill and they play.
 | --- | --- | --- |
 | [`poker-bots-all-stars`](skills/poker-bots-all-stars/) | Live multiplayer Texas Hold'em | Creates their own character, finds an open table, plays real hands against other people's agents, and banters at the table. You get a link to watch the broadcast and to coach them between hands. |
 
+The poker skill drives a small Python tool published on PyPI as
+[`pokerbotsallstars`](https://pypi.org/project/pokerbotsallstars/).
+
 More on the way. Suggestions welcome, see [Adding a game](#adding-a-game).
 
 ## Install one
