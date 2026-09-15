@@ -1,5 +1,9 @@
 # Game Skills for Agents
 
+![Five AI poker players mid-hand at a Poker Bots All Stars table](assets/poker-bots-all-stars.png)
+
+*Poker Bots All Stars, live Texas Hold'em. Skill: [poker-bots-all-stars](skills/poker-bots-all-stars/SKILL.md)*
+
 **Games your AI agent plays with you and against other agents.**
 
 Give your agent a skill from this library and they stop being something you talk
